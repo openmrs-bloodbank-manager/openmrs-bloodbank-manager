@@ -26,31 +26,7 @@
 
 <body>
 
-<%--<nav class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container-fluid">
-        <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project name</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="#">Settings</a></li>
-                <li><a href="#">Profile</a></li>
-                <li><a href="#">Help</a></li>
-            </ul>
-            <form class="navbar-form navbar-right">
-                <input type="text" class="form-control" placeholder="Search...">
-            </form>
-        </div>
-    </div>
-</nav>--%>
-&nbsp;&nbsp;&nbsp;&nbsp;
+<br><br>
 <button type="button" class="btn btn-default btn-lg">
     <span class="glyphicon glyphicon-user"></span> User
 </button>
@@ -58,38 +34,57 @@
 
 <div class="container-fluid">
 
-            <h2 class="sub-header">Blood Donation Questionnaire</h2>
-            <div class="table-responsive" style="width:80%; margin-left:10%; margin-right:10%;">
-                <form class="form-inline">
-                    <div class="form-group">
-                        <label class="sr-only" for="healthDonor">Questionnaire</label>
-                        <ul class="input-group">
-                            <li>
 
-                            <li><div class="input-group-addon" style="width:100%">Are you healthy currently?</div>
-                            <input type="text" class="form-control" id="healthDonor" placeholder="Yes or No"><br><br></li>
-                                <li><div class="input-group-addon" style="width:100%">Have you suffered from malaria recently?</div>
-                            <input type="text" class="form-control" id="malariaDonor" placeholder="Yes or No"><br><br></li>
-                                <li><div class="input-group-addon" style="width:100%">Are you pregnant?</div>
-                            <input type="text" class="form-control" id="pregnantDonor" placeholder="Yes or No"><br><br></li>
-                                <li><div class="input-group-addon" style="width:100%">Are you allergic to any medication? If yes, please explain.</div>
-                            <input type="text" class="form-control" id="onMedicationDonor" placeholder="Yes or No"><br><br></li>
-                                <li><div class="input-group-addon" style="width:100%">Have you ever donated blood before?</div>
-                            <input type="text" class="form-control" id="donatedBlood" placeholder="Yes or No"><br><br></li>
-                                <li><div class="input-group-addon" style="width:100%">Has blood ever been transfused to you?</div>
-                            <input type="text" class="form-control" id="bloodTransfusion" placeholder="Yes or No"><br><br></li>
-                                <><div class="input-group-addon" style="width:100%">Has any organ ever been transplanted to you?</div>
-                            <input type="text" class="form-control" id="organTransplant" placeholder="Yes or No"><br><br></li>
-                                <li><div class="input-group-addon" style="width:100%">Have you been pricked with a needle recently?</div>
-                            <input type="text" class="form-control" id="needleRisks" placeholder="Yes or No"><br><br></li>
-                                <li><div class="input-group-addon" style="width:100%">Have you ever suffered from syphillis or gonorrhea?</div>
-                            <input type="text" class="form-control" id="syphillisGonorrhea" placeholder="Yes or No"><br><br></li>
-                                <li><div class="input-group-addon" style="width:100%">Do you have a tattoo?</div>
-                            <input type="text" class="form-control" id="tatooDonor" placeholder="Yes or No"><br><br></li>
-                                <li><div class="input-group-addon" style="width:100%">Do you have any piercings?</div>
-                            <input type="text" class="form-control" id="piercingDonor" placeholder="Yes or No"><br><br></li>
-                            </ul>
-                        </div>
+            <div class="table-responsive" style="width:80%; margin-left:10%; margin-right:10%;">
+                <h2 class="sub-header">Blood Donation Questionnaire</h2>
+                <form style="width:80%;margin-right: 10%; margin-left: 10%;">
+                    <div class="form-group" style="width:auto;">
+                        <label class="sr-only" for="healthDonor">Questionnaire</label>
+
+                        <ul class="list-group" class="input-group" style="display: -moz-groupbox; width:80%; padding-right: 5%; margin-left: 5%;">
+
+                           <li class="list-group-item list-group-item-warning">Are you currently on any medication?
+                            <input style="width:100%; "type="text" class="form-control" id="healthDonor" placeholder="Yes or No"><br><br>
+                           </li>
+
+                            <li class="list-group-item list-group-item-warning">Are you allergic to any medication? If yes, please explain.
+                                <input style="width:100%;type="text" class="form-control" id="onMedicationDonor" placeholder="Yes or No"><br><br>
+                            </li>
+
+                            <li class="list-group-item list-group-item-warning">Have you suffered from malaria recently?
+                            <input style="width:100%;" type="text" class="form-control" id="malariaDonor" placeholder="Yes or No"><br><br>
+                            </li>
+
+                            <li class="list-group-item list-group-item-warning">Are you pregnant?
+                            <input style="width:100%;" type="text" class="form-control" id="pregnantDonor" placeholder="Yes or No or I am male"><br><br>
+                            </li>
+
+                            <li class="list-group-item list-group-item-warning">Have you ever donated blood before?
+                            <input style="width:100%;type="text" class="form-control" id="donatedBlood" placeholder="Yes or No"><br><br>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">Has blood ever been transfused to you?
+                            <input style="width:100%;type="text" class="form-control" id="bloodTransfusion" placeholder="Yes or No"><br><br>
+                            </li>
+
+                            <li class="list-group-item list-group-item-warning">Has any organ ever been transplanted to you?
+                            <input style="width:100%;type="text" class="form-control" id="organTransplant" placeholder="Yes or No"><br><br>
+                            </li>
+
+                            <li class="list-group-item list-group-item-warning">Have you been pricked with a needle recently?
+                            <input style="width:100%;type="text" class="form-control" id="needleRisks" placeholder="Yes or No"><br><br>
+                            </li>
+
+                            <li class="list-group-item list-group-item-warning">Have you ever suffered from syphillis or gonorrhea?
+                            <input style="width:100%;type="text" class="form-control" id="syphillisGonorrhea" placeholder="Yes or No"><br><br>
+                            </li>
+
+                            <li class="list-group-item list-group-item-warning">Do you have a tattoo?
+                            <input style="width:100%;type="text" class="form-control" id="tatooDonor" placeholder="Yes or No"><br><br>
+                            </li>
+                            <li class="list-group-item list-group-item-warning">Do you have any piercings?
+                            <input style="width:100%;type="text" class="form-control" id="piercingDonor" placeholder="Yes or No"><br><br>
+                            </li>
+                        </ul>
                     </div>
                     <br><br>
                     <button type="submit" class="btn btn-primary">Submit Questionnaire</button>

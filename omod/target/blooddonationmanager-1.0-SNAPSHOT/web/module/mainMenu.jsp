@@ -10,19 +10,18 @@
 <div style="border-bottom: 1px solid black;">
     <ul id="menu">
         <li class="first">
-            <a href="main.form" style="font-size:large; font-weight:bold; text-decoration:none;">Blood Bank System</a>
+            <a href="home.form" style="font-size:large; font-weight:bold; text-decoration:none;">Blood Bank System</a>
         </li>
 
         <openmrs:hasPrivilege privilege="Edit Encounters">
             <li <c:if test='<%= request.getRequestURI().contains("home") %>'>class="active"</c:if>>
             <a href="home.form">Home</a>
+        </li>
+        </openmrs:hasPrivilege>
 
         <openmrs:hasPrivilege privilege="Edit Encounters">
             <li <c:if test='<%= request.getRequestURI().contains("queue") %>'>class="active"</c:if>>
                 <a href="queue.form">Queue</a>
-            </li>
-        </openmrs:hasPrivilege>
-
             </li>
         </openmrs:hasPrivilege>
 
@@ -34,7 +33,7 @@
 
         <openmrs:hasPrivilege privilege="Edit Encounters">
             <li <c:if test='<%= request.getRequestURI().contains("bloodResults") %>'>class="active"</c:if>>
-                <a href="bloodResults.jsp">Donor Encounter</a>
+                <a href="bloodResults.form">Donor Encounter</a>
             </li>
         </openmrs:hasPrivilege>
 
