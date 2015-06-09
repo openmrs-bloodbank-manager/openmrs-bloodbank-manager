@@ -27,8 +27,20 @@
         </openmrs:hasPrivilege>
 
         <openmrs:hasPrivilege privilege="Edit Encounters">
+            <li <c:if test='<%= request.getRequestURI().contains("addDonor") %>'>class="active"</c:if>>
+                <a href="addDonorForm.form">Find/Add Donor</a>
+            </li>
+        </openmrs:hasPrivilege>
+
+        <openmrs:hasPrivilege privilege="Edit Encounters">
+            <li <c:if test='<%= request.getRequestURI().contains("bloodResults") %>'>class="active"</c:if>>
+                <a href="bloodResults.jsp">Donor Encounter</a>
+            </li>
+        </openmrs:hasPrivilege>
+
+        <openmrs:hasPrivilege privilege="Edit Encounters">
             <li <c:if test='<%= request.getRequestURI().contains("addOrUpdate") %>'>class="active"</c:if>>
-                <a href="addOrUpdate.form">Find/Add Donor</a>
+                <a href="addOrUpdate.form">Add or Update</a>
             </li>
         </openmrs:hasPrivilege>
 

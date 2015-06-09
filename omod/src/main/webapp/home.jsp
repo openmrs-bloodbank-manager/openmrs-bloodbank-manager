@@ -57,200 +57,43 @@
 
 
 <div class="container-fluid">
-    <%--<div class="row">
-                <br>
-            <ul>
-                <li><button type="button" class="btn btn-default btn-lg">
-                    <span class="glyphicon glyphicon-search"></span> View Queue
-                </button></li>
 
-                <li><button type="button" class="btn btn-default btn-lg">
-                    <span class="glyphicon glyphicon-search"></span> Find Donor
-                </button></li>
+            <h2 class="sub-header">Blood Donation Questionnaire</h2>
+            <div class="table-responsive" style="width:80%; margin-left:10%; margin-right:10%;">
+                <form class="form-inline">
+                    <div class="form-group">
+                        <label class="sr-only" for="healthDonor">Questionnaire</label>
+                        <ul class="input-group">
+                            <li>
 
-
-                <li><button type="button" class="btn btn-default btn-lg">
-                    <span class="glyphicon glyphicon-search"></span> Add Donor
-                </button></li>
-
-                <li><button type="button" class="btn btn-default btn-lg">
-                    <span class="glyphicon glyphicon-search"></span> View Stock
-                </button></li>
-
-                <li><button type="button" class="btn btn-default btn-lg">
-                    <span class="glyphicon glyphicon-search"></span> Find Donor
-                </button></li>
-
-            </ul>
-        </div>--%>
-        <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
-            <h1 class="page-header">Blood Bank Manager</h1>
-
-            <form class="form-horizontal" role="form">
-                <div class="form-group">
-                    <label for="firstname" class="col-sm-2 control-label">First Name</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="firstname"
-                               placeholder="Enter First Name">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="lastname" class="col-sm-2 control-label">Last Name</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="lastname"
-                               placeholder="Enter Last Name">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="gender" class="col-sm-2 control-label">Gender</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="gender"
-                               placeholder="Enter Donor's Gender">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="address 1" class="col-sm-2 control-label">Address 1</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="address 1"
-                               placeholder="Enter Donor's First Address">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="address 2" class="col-sm-2 control-label">Address 2</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="address 2"
-                               placeholder="Enter Donor's Second Address">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <label for="county" class="col-sm-2 control-label">County</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="county"
-                               placeholder="Enter Donor's County">
-                    </div>
-                </div>
-
-                <div class="form-group">
-                    <label for="lastname" class="col-sm-2 control-label">Last Name</label>
-                    <div class="col-sm-10">
-                        <input type="text" class="form-control" id="lastname"
-                               placeholder="Enter Last Name">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Remember me
-                            </label>
+                            <li><div class="input-group-addon" style="width:100%">Are you healthy currently?</div>
+                            <input type="text" class="form-control" id="healthDonor" placeholder="Yes or No"><br><br></li>
+                                <li><div class="input-group-addon" style="width:100%">Have you suffered from malaria recently?</div>
+                            <input type="text" class="form-control" id="malariaDonor" placeholder="Yes or No"><br><br></li>
+                                <li><div class="input-group-addon" style="width:100%">Are you pregnant?</div>
+                            <input type="text" class="form-control" id="pregnantDonor" placeholder="Yes or No"><br><br></li>
+                                <li><div class="input-group-addon" style="width:100%">Are you allergic to any medication? If yes, please explain.</div>
+                            <input type="text" class="form-control" id="onMedicationDonor" placeholder="Yes or No"><br><br></li>
+                                <li><div class="input-group-addon" style="width:100%">Have you ever donated blood before?</div>
+                            <input type="text" class="form-control" id="donatedBlood" placeholder="Yes or No"><br><br></li>
+                                <li><div class="input-group-addon" style="width:100%">Has blood ever been transfused to you?</div>
+                            <input type="text" class="form-control" id="bloodTransfusion" placeholder="Yes or No"><br><br></li>
+                                <><div class="input-group-addon" style="width:100%">Has any organ ever been transplanted to you?</div>
+                            <input type="text" class="form-control" id="organTransplant" placeholder="Yes or No"><br><br></li>
+                                <li><div class="input-group-addon" style="width:100%">Have you been pricked with a needle recently?</div>
+                            <input type="text" class="form-control" id="needleRisks" placeholder="Yes or No"><br><br></li>
+                                <li><div class="input-group-addon" style="width:100%">Have you ever suffered from syphillis or gonorrhea?</div>
+                            <input type="text" class="form-control" id="syphillisGonorrhea" placeholder="Yes or No"><br><br></li>
+                                <li><div class="input-group-addon" style="width:100%">Do you have a tattoo?</div>
+                            <input type="text" class="form-control" id="tatooDonor" placeholder="Yes or No"><br><br></li>
+                                <li><div class="input-group-addon" style="width:100%">Do you have any piercings?</div>
+                            <input type="text" class="form-control" id="piercingDonor" placeholder="Yes or No"><br><br></li>
+                            </ul>
                         </div>
                     </div>
-                </div>
-                <div class="form-group">
-                    <div class="col-sm-offset-2 col-sm-10">
-                        <button type="submit" class="btn btn-default">Sign in</button>
-                    </div>
-                </div>
-            </form>
-
-            <div class="row placeholders">
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="/moduleResources/images/add.png" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Add Donor</span>
-                </div>
-
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="/images/find.png" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Find Donor</span>
-                </div>
-
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="/images/view.png" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">View Results</span>
-                </div>
-
-                <div class="col-xs-6 col-sm-3 placeholder">
-                    <img data-src="/images/inventory.png" class="img-responsive" alt="Generic placeholder thumbnail">
-                    <h4>Label</h4>
-                    <span class="text-muted">Blood Inventory</span>
-                </div>
-
-            </div>
-
-            <h2 class="sub-header">Blood Request Queue</h2>
-            <div class="table-responsive">
-                <table class="table table-striped">
-                    <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                        <th>Header</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>1,001</td>
-                        <td>Lorem</td>
-                        <td>ipsum</td>
-                        <td>dolor</td>
-                        <td>sit</td>
-                    </tr>
-                    <tr>
-                        <td>1,005</td>
-                        <td>Nulla</td>
-                        <td>quis</td>
-                        <td>sem</td>
-                        <td>at</td>
-                    </tr>
-                    <tr>
-                        <td>1,006</td>
-                        <td>nibh</td>
-                        <td>elementum</td>
-                        <td>imperdiet</td>
-                        <td>Duis</td>
-                    </tr>
-                    <tr>
-                        <td>1,007</td>
-                        <td>sagittis</td>
-                        <td>ipsum</td>
-                        <td>Praesent</td>
-                        <td>mauris</td>
-                    </tr>
-                    <tr>
-                        <td>1,008</td>
-                        <td>Fusce</td>
-                        <td>nec</td>
-                        <td>tellus</td>
-                        <td>sed</td>
-                    </tr>
-                    <tr>
-                        <td>1,009</td>
-                        <td>augue</td>
-                        <td>semper</td>
-                        <td>porta</td>
-                        <td>Mauris</td>
-                    </tr>
-                    <tr>
-                        <td>1,010</td>
-                        <td>massa</td>
-                        <td>Vestibulum</td>
-                        <td>lacinia</td>
-                        <td>arcu</td>
-                    </tr>
-                    <tr>
-                        <td>1,011</td>
-                        <td>eget</td>
-                        <td>nulla</td>
-                        <td>Class</td>
-                        <td>aptent</td>
-                    </tr>
-                    </tbody>
-                </table>
+                    <br><br>
+                    <button type="submit" class="btn btn-primary">Submit Questionnaire</button>
+                </form>
             </div>
         </div>
     </div>

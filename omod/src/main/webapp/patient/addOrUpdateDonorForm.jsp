@@ -5,11 +5,18 @@
 
 <br/>
 <div id="wrapper">
-    <div id="leftCol" style="margin-left: 25%; margin-right: 25%; min-width:500px; border-radius: 5%">
 
+    <div id="rightCol" style=" margin-right:15%; margin-left:15%; width:800px">
+        <div class="box" style="float:right;margin-left:4px;">
+            <span class="boxHeader">Matching patients</span>
+            <div id="display" name="display"></div>
+        </div>
+    </div>
+
+    <div id="leftCol" style="margin-right:15%; margin-left:15%; width:800px; -webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;">
 
         <form class="box" id="addDonorForm" method="post">
-            <div class="boxHeader" style="height:10%; padding:5%;">Search Donor by Name</div>
+            <div class="boxHeader" style="height:10%; padding:5%;"><h1>Search Donor by Name</h1></div>
             <div style="padding-left: 15%; padding-right: 15%;">
                 <div>
                     <div style="margin-top:12px;"><spring:message code="Donor Name"/></div>
@@ -78,12 +85,7 @@
     </div>
 </div>
 <!--Right colstart -->
-<div id="rightCol" style="float:right; width:700px">
-    <div class="box" style="margin-left:4px;">
-        <span class="boxHeader">Matching patients</span>
-        <div id="display" name="display"></div>
-    </div>
-</div>
+
 </div>
 
 
